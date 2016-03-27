@@ -1,0 +1,16 @@
+The following files should be in the BINCLOCK distribution that was prepared
+by Thornton Rose:
+
+   binclock.doc   -- The file you are reading
+   binclock.exe   -- binary clock program
+   binclock.c     -- C version: main source file
+   binclock.h     -- C version: header file
+   binclock.app   -- FoxPro application
+   binclock.pjx   -- Fox version: project file
+   binclock.pjt   -- Fox version: project file (memo)
+   binclock.scx   -- Fox version: screen file
+   binclock.sct   -- Fox version: screen file (memo)
+   irand.prg      -- Fox version: random number program
+   ntobase.prg    -- Fox version: base conversion program
+   config.fp      -- Fox version: special config file
+   binclock.ada   -- Ada version: main source file
