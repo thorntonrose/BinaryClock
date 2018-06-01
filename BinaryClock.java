@@ -27,11 +27,11 @@ import javax.swing.event.*;
 public class BinaryClock extends JFrame {
    private static final String LIGHT_ON = "*";
 
-   private File       propFile = new File("BinaryClock.properties");
-   private Properties props = new Properties();
-   private JLabel[]   lights = new JLabel[24];
-   private Point      pressLocation;
-   private Timer      clockTimer;
+   private File              propFile = new File("BinaryClock.properties");
+   private Properties        props = new Properties();
+   private JLabel[]          lights = new JLabel[24];
+   private Point             pressLocation;
+   private javax.swing.Timer clockTimer;
 
    // GUI components
    private GridLayout gridLayout1  = new GridLayout();
@@ -117,7 +117,7 @@ public class BinaryClock extends JFrame {
 
       showTime();
 
-      clockTimer = new Timer(
+      clockTimer = new javax.swing.Timer(
          1000,  // 1000 ms == 1 sec.
          new ActionListener() {
             public void actionPerformed(ActionEvent event) {
@@ -305,4 +305,3 @@ public class BinaryClock extends JFrame {
       (new BinaryClock()).show();
    }
 }
-
