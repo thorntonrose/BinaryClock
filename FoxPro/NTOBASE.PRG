@@ -10,11 +10,10 @@ endif
 
 m.d = x
 m.s = ""
-   
-do while .t.
 
+do while .t.
    m.r = m.d % b
-   
+
    m.s = iif(m.r >= 10, ;
              chr(asc("A") - 10 + m.r), ;
              alltrim(str(m.r))) + ;
@@ -25,8 +24,7 @@ do while .t.
    if m.d == 0
       exit
    endif
-            
-enddo   
+enddo
 
 return m.s
 
