@@ -13,12 +13,7 @@ m.s = ""
 
 do while .t.
    m.r = m.d % b
-
-   m.s = iif(m.r >= 10, ;
-             chr(asc("A") - 10 + m.r), ;
-             alltrim(str(m.r))) + ;
-         m.s
-
+   m.s = iif(m.r >= 10, chr(asc("A") - 10 + m.r), alltrim(str(m.r))) + m.s
    m.d = int(int(m.d) / int(b))
 
    if m.d == 0
